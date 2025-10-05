@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema(
     username: {
       type: String,
       unique: [true, "نام کاربری وارد شده قبلاً استفاده شده است"],
-      required: [true, "نام کاربری الزامی است"],
+      index:false
     },
     password: {
       type: String,
